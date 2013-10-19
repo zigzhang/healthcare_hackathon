@@ -1,0 +1,2 @@
+class ClinicalStudyController < ApplicationController
+end
