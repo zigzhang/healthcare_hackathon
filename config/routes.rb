@@ -3,7 +3,24 @@ Healthcare::Application.routes.draw do
 
   resources :patients do
     member do
-      get 'index', controller: :patient, action: :index
+      get 'index', controller: :patient, action: :show
+    end
+  end
+  
+  resources :clinical_studies do
+    collection do
+      get 'index', controller: :clinical_study, action: :index
+    end
+    
+    member do
+      get 'show', controller: :clinical_study, action: :show
+    end
+  end
+  
+  resources :assessments do
+    member do
+      get 'new', controller: :assessment, action: :new
+      post 'create', controller: :assessment, action: :create
     end
   end
 
