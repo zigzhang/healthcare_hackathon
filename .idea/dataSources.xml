@@ -5,6 +5,7 @@
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/HealthTest</jdbc-url>
+      <user-name>rails</user-name>
       <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
       <libraries>
         <library>
@@ -19,6 +20,7 @@
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/HealthProd</jdbc-url>
+      <user-name>rails</user-name>
       <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
       <libraries>
         <library>
@@ -33,6 +35,7 @@
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/HealthDev</jdbc-url>
+      <user-name>rails</user-name>
       <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
       <libraries>
         <library>
