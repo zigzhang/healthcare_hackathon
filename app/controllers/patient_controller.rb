@@ -8,7 +8,7 @@ class PatientController < ApplicationController
   end
 
   def qrcode
-    @qr = RQRCode::QRCode.new( 'http://healthcare-hackathon.herokuapp.com/'+params[:id]+'/index', :size => 4, :level => :h )
+    @qr = RQRCode::QRCode.new( '/'+params[:id]+'/index', :size => 4, :level => :h )
   end
 
 end
