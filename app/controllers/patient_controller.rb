@@ -16,4 +16,5 @@ class PatientController < ApplicationController
   	@protocole_id = params[:protocole_id]
   	@site_id = current_user.site_id
   	@patient = Patient.new(:protocole_id => @protocole_id, :site_id => @site_id)
+  end
 end

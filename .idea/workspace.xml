@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/patient_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/patient_controller.rb" />
     </list>
     <ignored path="Healthcare.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +25,7 @@
     <file path="/20131019214734_create_sites.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382221478052" ignored="false" />
     <file path="/20131019215053_devise_create_users.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382221458348" ignored="false" />
     <file path="/routes.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382232875125" ignored="false" />
-    <file path="/patient_controller.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382235869006" ignored="false" />
+    <file path="/patient_controller.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382259240093" ignored="false" />
     <file path="$PROJECT_DIR$/../Babr/Gemfile" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382231211124" ignored="false" />
     <file path="/Dummy.txt" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382258419900" ignored="false" />
     <file path="/20131020025639_add_date_time.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382240927703" ignored="false" />
@@ -78,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patient_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="patient_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/patient_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="86" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+            <state line="18" column="5" selection-start="680" selection-end="680" vertical-scroll-proportion="0.31177828">
               <folding />
             </state>
           </provider>
@@ -99,7 +97,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="136" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+            <state line="3" column="6" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="215" selection-end="215" vertical-scroll-proportion="0.15588914">
+            <state line="17" column="123" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,7 +141,7 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
+            <state line="54" column="23" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,11 +176,11 @@
         <option value="$PROJECT_DIR$/app/views/patient/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/patient_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131020025639_add_date_time.rb" />
         <option value="$PROJECT_DIR$/app/views/patient/new.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/controllers/patient_controller.rb" />
       </list>
     </option>
   </component>
@@ -849,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
+        <state line="54" column="23" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -868,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/patient_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="86" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/patient/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="42" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.75">
@@ -882,16 +873,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="136" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+        <state line="17" column="123" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="215" selection-end="215" vertical-scroll-proportion="0.15588914">
+        <state line="3" column="6" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/patient_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="680" selection-end="680" vertical-scroll-proportion="0.31177828">
           <folding />
         </state>
       </provider>
