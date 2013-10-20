@@ -11,4 +11,9 @@ class PatientController < ApplicationController
     @qr = RQRCode::QRCode.new( '/'+params[:id]+'/index', :size => 4, :level => :h )
   end
 
+  def create
+  	@clinical_study= ClinicalStudy.all
+  	@protocole_id = params[:protocole_id]
+  	@site_id = current_user.site_id
+  	@patient = Patient.new(:protocole_id => @protocole_id, :site_id => @site_id)
 end
