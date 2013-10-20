@@ -6,8 +6,8 @@
 development:
   adapter: postgresql
   database: HealthDev
-  username: rails
-  password: password
+  username: postgres
+  password: Zhang1990
   host: localhost
   encoding: UTF8
 
