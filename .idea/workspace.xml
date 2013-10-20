@@ -26,7 +26,7 @@
     <file path="/20131019214734_create_sites.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382221478052" ignored="false" />
     <file path="/20131019215053_devise_create_users.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382221458348" ignored="false" />
     <file path="/routes.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382265962275" ignored="false" />
-    <file path="/patient_controller.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382271819246" ignored="false" />
+    <file path="/patient_controller.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382278212857" ignored="false" />
     <file path="$PROJECT_DIR$/../Babr/Gemfile" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382231211124" ignored="false" />
     <file path="/Dummy.txt" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382262939092" ignored="false" />
     <file path="/20131020025639_add_date_time.rb" changelist="1f8cdfa1-a6b1-4d6c-88f7-e69189e4bad5" time="1382240927703" ignored="false" />
@@ -57,15 +57,15 @@
       <file leaf-file-name="clinical_study_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/clinical_study_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="51" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0">
+            <state line="89" column="51" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1382267978849" expanded="true" signature="507:968" placeholder="do ... end" />
-                <marker date="1382267978849" expanded="true" signature="899:962" placeholder="for ... end" />
-                <marker date="1382267978849" expanded="true" signature="1312:1675" placeholder="do ... end" />
-                <marker date="1382267978849" expanded="true" signature="1549:1665" placeholder="if ... end" />
-                <marker date="1382267978849" expanded="true" signature="1764:2227" placeholder="do ... end" />
-                <marker date="1382267978849" expanded="true" signature="1885:2148" placeholder="do ... end" />
-                <marker date="1382267978849" expanded="true" signature="2354:2379" placeholder="{ ... }" />
+                <marker date="1382278177917" expanded="true" signature="507:968" placeholder="do ... end" />
+                <marker date="1382278177917" expanded="true" signature="899:962" placeholder="for ... end" />
+                <marker date="1382278177917" expanded="true" signature="1390:1743" placeholder="do ... end" />
+                <marker date="1382278177917" expanded="true" signature="1575:1720" placeholder="if ... end" />
+                <marker date="1382278177917" expanded="true" signature="1842:2342" placeholder="do ... end" />
+                <marker date="1382278177917" expanded="true" signature="1994:2263" placeholder="do ... end" />
+                <marker date="1382278177917" expanded="true" signature="2469:2494" placeholder="{ ... }" />
               </folding>
             </state>
           </provider>
@@ -104,7 +104,7 @@
       <file leaf-file-name="patient_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/patient_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="104" selection-start="885" selection-end="885" vertical-scroll-proportion="0.4157044">
+            <state line="22" column="54" selection-start="626" selection-end="626" vertical-scroll-proportion="0.38106236">
               <folding />
             </state>
           </provider>
@@ -890,15 +890,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/clinical_study_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="51" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0">
+        <state line="89" column="51" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1382267978849" expanded="true" signature="507:968" placeholder="do ... end" />
-            <marker date="1382267978849" expanded="true" signature="899:962" placeholder="for ... end" />
-            <marker date="1382267978849" expanded="true" signature="1312:1675" placeholder="do ... end" />
-            <marker date="1382267978849" expanded="true" signature="1549:1665" placeholder="if ... end" />
-            <marker date="1382267978849" expanded="true" signature="1764:2227" placeholder="do ... end" />
-            <marker date="1382267978849" expanded="true" signature="1885:2148" placeholder="do ... end" />
-            <marker date="1382267978849" expanded="true" signature="2354:2379" placeholder="{ ... }" />
+            <marker date="1382278177917" expanded="true" signature="507:968" placeholder="do ... end" />
+            <marker date="1382278177917" expanded="true" signature="899:962" placeholder="for ... end" />
+            <marker date="1382278177917" expanded="true" signature="1390:1743" placeholder="do ... end" />
+            <marker date="1382278177917" expanded="true" signature="1575:1720" placeholder="if ... end" />
+            <marker date="1382278177917" expanded="true" signature="1842:2342" placeholder="do ... end" />
+            <marker date="1382278177917" expanded="true" signature="1994:2263" placeholder="do ... end" />
+            <marker date="1382278177917" expanded="true" signature="2469:2494" placeholder="{ ... }" />
           </folding>
         </state>
       </provider>
@@ -966,7 +966,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/patient_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="104" selection-start="885" selection-end="885" vertical-scroll-proportion="0.4157044">
+        <state line="22" column="54" selection-start="626" selection-end="626" vertical-scroll-proportion="0.38106236">
           <folding />
         </state>
       </provider>

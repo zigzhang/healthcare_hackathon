@@ -20,7 +20,7 @@ class PatientController < ApplicationController
         end
       end
     end
-    @crf = @patient.protocole.assessments.map{|a| a.crf_items}
+    @crf = @patient.protocole.assessments.select{|a| !a.crf_items.nil?}.map{|a| a.crf_items}
     render json: {status: "success", data: {patient: @patient, protocole:  @patient.protocole, clinical_study: @patient.protocole.clinical_study,
                                            assessments: @patient.protocole.assessments, crf_items:  @crf}}
   end
