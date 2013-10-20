@@ -1,4 +1,5 @@
 Healthcare::Application.routes.draw do
+  get "crf_item/edit"
   devise_for :users
 
   resources :patients do
