@@ -50,25 +50,27 @@ class ClinicalStudyController < ApplicationController
     @sites_protocoles = Array.new
     @sites.each do |s|
       @errors = 0
-      s.patients.each do |p|
-        p.protocole.assessments.each do |a|
-          if a.error
-            @errors = @errors + 1
-          end
-        end
-      end
-      @sites_stats.push([s.name, s.patients.count])
+      @patients = 0
       pending = 0
       active = 0
       done = 0
       s.patients.each do |p|
-        case p.protocole.state
-        when "pending"
-          pending = pending + 1
-        when "active"
-          active = active + 1
-        when "done"
-          done = done + 1
+        if p.protocole.clinical_study.id = params[:id]
+          @sites_stats.push([s.name, @patients])
+          case p.protocole.state
+          when "pending"
+            pending = pending + 1
+          when "active"
+            active = active + 1
+          when "done"
+            done = done + 1
+          end
+          @patients = @patients + 1
+          p.protocole.assessments.each do |a|
+            if a.error
+              @errors = @errors + 1
+            end
+          end
         end
       end
       @sites_protocoles.push([s, [["State", "Total"], ["Pending", pending], ["Active", active], ["Done", done]], @errors])
