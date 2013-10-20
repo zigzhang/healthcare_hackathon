@@ -1,6 +1,25 @@
 class ClinicalStudyController < ApplicationController
   def index
     @clinical_studies = ClinicalStudy.all
+    @clinical_stats = Array.new
+    @clinical_studies.each do |cs|
+      @protocoles = cs.protocoles
+      @countries = Array.new
+      @count = Array.new
+      @stats = [["Country", "Total Patients"]]
+      @protocoles.each do |p|
+        if @countries.index(p.patient.site.country).nil? 
+          @countries.push(p.patient.site.country)
+          @count.push(1)
+        else
+          @count[@countries.index(p.patient.site.country)] = @count[@countries.index(p.patient.site.country)] + 1
+        end
+        for i in 0..@countries.count-1 do
+          @stats.push([@countries[i], @count[i]])
+        end 
+      end
+      @clinical_stats.push([cs, @stats])
+    end
     respond_to do |format|
       format.html { render action: 'index' }
     end
@@ -10,8 +29,13 @@ class ClinicalStudyController < ApplicationController
     @clinical_study = ClinicalStudy.find params[:id]
     @protocoles = @clinical_study.protocoles
     @sites = Array.new
+    @sites_id = Array.new
     @protocoles.each do |p|
-      @sites.push(p.patient.site)
+      if @sites_id.include? p.patient.site.id
+      else
+        @sites.push(p.patient.site)
+        @sites_id.push(p.patient.site.id)
+      end
     end
     @sites_stats = [["Site", "Number of Patients"]]
     @sites_protocoles = Array.new
@@ -29,8 +53,8 @@ class ClinicalStudyController < ApplicationController
         when "done"
           done = done + 1
         end
-        @sites_protocoles.push([s.name, [["State", "Total"], ["Pending", pending], ["Active", active], ["Done", done]]])
       end
+      @sites_protocoles.push([s, [["State", "Total"], ["Pending", pending], ["Active", active], ["Done", done]]])
 
     end
     @assessment = @clinical_study.assessments
