@@ -5,6 +5,7 @@ Healthcare::Application.routes.draw do
   resources :patients do
     member do
       get 'index', controller: :patient, action: :show
+      get 'qrcode', controller: :patient, action: :qrcode
     end
   end
   

@@ -2,13 +2,20 @@
 class ClinicalStudyController < ApplicationController
   def index
     @clinical_studies = ClinicalStudy.all
-    render json: {status: "success", data: @clinical_studies}
+    respond_to do |format|
+      format.html { render action: 'index' }
+    end
   end
   
   def show
     @clinical_study = ClinicalStudy.find params[:id]
-    @assessment = @clinical_study.assessment
-    render json: {status: "success", data: @assessment}
+    @site = Protocole.where(clinical_study: params[:id])
+    @assessment = @clinical_study.assessments
+    respond_to do |format|
+      format.html { render action: 'show' }
+      format.json {render status: "success", data: @assessment}
+    end
+    
   end
 
   def create
