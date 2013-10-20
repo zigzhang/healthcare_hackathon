@@ -1,3 +1,4 @@
+
 class ClinicalStudyController < ApplicationController
   def index
     @clinical_studies = ClinicalStudy.all
@@ -63,6 +64,13 @@ class ClinicalStudyController < ApplicationController
       format.json {render status: "success", data: @assessment}
     end
     
+  end
+
+  def create
+  	@sponsor=current_user
+  	@clinical_study = ClinicalStudy.new(:sponsor_id => @sponsor.name, :name => params[:id])
+  	render json: {status: "success", data: @clinical_study}
+
   end
   
 end

@@ -1,4 +1,5 @@
 Healthcare::Application.routes.draw do
+  get "crf_item/edit"
   devise_for :users
 
   resources :patients do
@@ -19,7 +20,7 @@ Healthcare::Application.routes.draw do
   end
   
   resources :assessments do
-    member do
+    collection do
       get 'new', controller: :assessment, action: :new
       post 'create', controller: :assessment, action: :create
     end
