@@ -11,7 +11,8 @@
 				<% @clinical_stats.each do |study| %>
 					<div class="col-md-4 portfolio-item">
 	          <div id="chart_div<%= study[0].id %>" style="width: 80%;"></div>
-	          <h3><a href="/clinical_studies/<%= study[0].id %>/show"><%= study[0].name %></a></h3>
+	          <h3><a href="/clinical_studies/<%= study[0].id %>/show"><%= study[0].name %></a> 
+							<% if study[2] == 0 %><span class="label label-success"><%= study[2] %></span><% else %><span class="label label-danger"><%= study[2] %><% end %></h3>
 						<h4><%= study[0].description %></h4>
 	          <p>Total randomized patients: <%= study[0].protocoles.count %></p>
 	

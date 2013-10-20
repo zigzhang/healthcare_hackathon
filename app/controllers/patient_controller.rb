@@ -1,8 +1,25 @@
 class PatientController < ApplicationController
   require 'rqrcode'
+  require 'date'
 
   def show
     @patient = Patient.find(params[:id])
+    @assessments = @patient.protocole.assessments
+    today = Date.today
+    @assessments.each do |a|
+      unless a.protocole.date.nil?
+        expected_date = a.protocole.date.to_date + a.protocol_day
+        if a.realized
+          if today < expected_date
+            a.update(error: true)
+          end
+        else
+          if today > expected_date
+            a.update(error: true)
+          end
+        end
+      end
+    end
     render json: {status: "success", data: {patient: @patient, protocole:  @patient.protocole, clinical_study: @patient.protocole.clinical_study,
                                            assessments: @patient.protocole.assessments }}
   end
