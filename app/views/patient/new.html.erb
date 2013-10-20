@@ -4,7 +4,7 @@
 <%= f.text_field :name %>
 
 <%= radio_button_tag(:protocole_id, "clinical study") %>
-<% @clinical_study.each do |clinical|	
+<% @clinical_study.each do |clinical|	%>
 	<%= radio_button_tag( clinical, clinical.name) %>
 <% end %>	
 
