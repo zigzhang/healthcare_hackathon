@@ -56,7 +56,6 @@ class ClinicalStudyController < ApplicationController
       done = 0
       s.patients.each do |p|
         if p.protocole.clinical_study.id = params[:id]
-          @sites_stats.push([s.name, @patients])
           case p.protocole.state
           when "pending"
             pending = pending + 1
@@ -73,6 +72,7 @@ class ClinicalStudyController < ApplicationController
           end
         end
       end
+      @sites_stats.push([s.name, @patients])
       @sites_protocoles.push([s, [["State", "Total"], ["Pending", pending], ["Active", active], ["Done", done]], @errors])
 
     end
