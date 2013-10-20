@@ -55,7 +55,7 @@ class ClinicalStudyController < ApplicationController
       active = 0
       done = 0
       s.patients.each do |p|
-        if p.protocole.clinical_study.id = params[:id]
+        if p.protocole.clinical_study.id == params[:id]
           case p.protocole.state
           when "pending"
             pending = pending + 1
