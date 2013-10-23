@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Goal of this project: reduce errors input by nurses in Clinical studies and allow Sponsors to keep better track of those errors.
 
-Things you may want to cover:
+Both Android and Web App
 
-* Ruby version
+Features:
 
-* System dependencies
+* Generate QRCode by patient
+* Scan QRCode
+* Generate a Clinical Protocol
+* Task Manager for nurse according to Patient and Protocol
+* Analytics - Global stats per Sites + detect schedule errors in Protocol and Clinical trials
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Thanks to Clément and Yann for the coding, Aubrey and Jacquie for their healthcare insight.
